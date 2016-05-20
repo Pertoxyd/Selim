@@ -1,0 +1,35 @@
+<?php
+$sz_chapternames = array(
+0 => 
+"Inhaltsverzeichnis",
+"Einordnung des Themas",
+"Wichtige Begriffe",
+"Begriffszusammenhänge",
+"Allgemeine Kriterien",
+"Relevanzbegriff",
+"Bewertungskriterien",
+"Elementarparameter",
+"Standardmaß 'recall'",
+"Wichtig für den recall",
+"Standardmaß 'precision'",
+"Wichtig für die precision",
+"Elementarparameter",
+"Elementarparameter recall",
+"Elementarparameter precision",
+"Recall und Precision",
+"Recall und Precision",
+"Beispiel zur Berechnung von recall und precision",
+"Sonderfälle bei der Berechnung",
+"Sonderfälle bei der Berechnung",
+"Leere Antwortmenge",
+"Koordination der Standardmaße",
+"Kombination von Maßzahlen: e-Maß",
+"e-Maß",
+"e-Maß",
+"Benutzerstandpunkt",
+"Benutzerstandpunkt (1/3)",
+"Benutzerstandpunkt (2/3)",
+"Benutzerstandpunkt (3/3)",
+"Fazit"
+);
+?>

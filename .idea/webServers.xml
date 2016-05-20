@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="02da8c17-8e0a-4471-8ea3-6731e4c0b4bc" name="Profihost" url="http://ftp.tpertl.de">
+        <fileTransfer host="ftp.tpertl.de" port="21" rootFolder="/selim/selim" password="dfc6dfdadfcedfdddfc4dfc4dfc5df9cdfc8df93dfdadf99" username="tpeowgcx">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
