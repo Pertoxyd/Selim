@@ -49,6 +49,19 @@ $tpl->assign( "A", "
 		</p>
 	</div>
 </div>
+
+<div class='panel panel-default'>
+	<div class='panel-heading'>
+		<a class='toggleMoreInformation'><h4 class='panel-title'>Attribut</h4></a>
+	</div>	
+	<div class='ausklappen hidden panel-body'>
+		<p>
+		Ein Attribut (Eigenschaft) beschreibt ein Wesensmerkmal, d.h. eine individuelle Besonderheit einer 
+		<a href='#E'>Entität.</a> Die Attribute der Tabelle Studierende sind z.B. MatrikelNummer, Nachname, 
+		Vorname, Geburtsdatum, usw.
+		</p>
+	</div>
+</div>
 " );
 
 // B
@@ -64,9 +77,81 @@ Noch keine Einträge vorhanden
 " );
 
 // D
-$tpl->assign( "disableD", "disabled='disabled'");
+$tpl->assign( "disableD", "");
 $tpl->assign( "D", "
-Noch keine Einträge vorhanden
+<div class='panel panel-default'>
+	<div class='panel-heading'>
+		<a class='toggleMoreInformation'><h4 class='panel-title'>Datenbank</h4></a>
+	</div>	
+	<div class='ausklappen hidden panel-body'>
+		<p>
+		Unter einer Datenbank versteht man eine auf Dauer für flexiblen und sicheren Gebrauch ausgelegte 
+		Datenorganisation, die sowohl eine Datenbasis als auch die zugehörige Datenverwaltung umfasst.
+		</p>
+	</div>
+</div>
+
+<div class='panel panel-default'>
+	<div class='panel-heading'>
+		<a class='toggleMoreInformation'><h4 class='panel-title'>Datenmodell</h4></a>
+	</div>	
+	<div class='ausklappen hidden panel-body'>
+		<p>
+		Ein Datenmodell legt die Eigenschaften, Struktur und Konsistenzbedingungen für in die Datenbank zu speichernde 
+		Datenelemente fest.
+		</p>
+	</div>
+</div>
+
+<div class='panel panel-default'>
+	<div class='panel-heading'>
+		<a class='toggleMoreInformation'><h4 class='panel-title'>Data Control Language (DCL)</h4></a>
+	</div>	
+	<div class='ausklappen hidden panel-body'>
+		<p>
+		Die Data Control Language, dient der Steuerung von Zugriffsrechten auf die Datenbank. Mit der DCL können somit 
+		Privilegien an Benutzer oder auch auf Objekte gezielt gesteuert werden.
+		</p>
+	</div>
+</div>
+
+<div class='panel panel-default'>
+	<div class='panel-heading'>
+		<a class='toggleMoreInformation'><h4 class='panel-title'>Data Definition Language (DDL)</h4></a>
+	</div>	
+	<div class='ausklappen hidden panel-body'>
+		<p>
+		Die Data Definition Language (Datendefinitionssprache) dient zur Einrichtung, Änderung oder Löschung von 
+		Datenbankobjekten wie z. B. Tabellen, Indizes usw.<br/>
+        <br/>
+        Zu den DDL-Anweisungen gehören:<br/>
+        <ul>
+            <li>CREATE, um Tabellen zu erstellen.</li>
+            <li>ALTER, um die Tabellenstruktur zu ändern, z.B. Hinzufügen einer Spalte.</li>
+            <li>DROP, um Spalten oder auch Tabellen zu löschen.</li>
+        </ul>        
+		</p>
+	</div>
+</div>
+
+<div class='panel panel-default'>
+	<div class='panel-heading'>
+		<a class='toggleMoreInformation'><h4 class='panel-title'>Data Manipulation Language (DML)</h4></a>
+	</div>	
+	<div class='ausklappen hidden panel-body'>
+		<p>
+		Mit der Data Manipulation Language (Datenmanipulationssprache) können Daten selektiert, geändert und gelöscht 
+		werden.<br/>
+        <br/>
+        Zu den wichtigsten Anweisungen gehören:<br/>
+        <ul>
+            <li>INSERT</li>
+            <li>UPDATE</li>
+            <li>DELETE</li>
+        </ul>        
+		</p>
+	</div>
+</div>
 " );
 
 // E
@@ -113,6 +198,39 @@ $tpl->assign( "E", "
 
 <div class='panel panel-default'>
 	<div class='panel-heading'>
+		<a class='toggleMoreInformation'><h4 class='panel-title'>Entitiy-Relationship-Modell (ERM)</h4></a>
+	</div>	
+	<div class='ausklappen hidden panel-body'>
+		<p>
+		Entity-Relationship-Modelle werden zur Datenmodellierung genutzt.<br/>
+        <br/>
+        Die Elemente des ER-Modells sind:<br/>
+        <ul>
+            <li>Entitäten</li>
+            <li>Entitätstyp</li>
+            <li>Relationen</li>
+            <li>Beziehungstyp</li>
+        </ul>        
+		</p>
+	</div>
+</div>
+
+<div class='panel panel-default'>
+	<div class='panel-heading'>
+		<a class='toggleMoreInformation'><h4 class='panel-title'>Entität</h4></a>
+	</div>	
+	<div class='ausklappen hidden panel-body'>
+		<p>
+		Als Entität (auch Informationsobjekt genannt, englisch entity) wird in der Datenmodellierung ein eindeutig 
+		zu bestimmendes Objekt bezeichnet, über das Informationen gespeichert oder verarbeitet werden sollen. Das 
+		Objekt kann materiell oder immateriell, konkret oder abstrakt sein. Beispiele: Ein Fahrzeug, ein Konto, eine 
+		Person, ein Zustand.
+		</p>
+	</div>
+</div>
+
+<div class='panel panel-default'>
+	<div class='panel-heading'>
 		<a class='toggleMoreInformation'><h4 class='panel-title'>Erschliessung</h4></a>
 	</div>	
 	<div class='ausklappen hidden panel-body'>
@@ -127,9 +245,20 @@ $tpl->assign( "E", "
 " );
 
 // F
-$tpl->assign( "disableF", "disabled='disabled'");
+$tpl->assign( "disableF", "");
 $tpl->assign( "F", "
-Noch keine Einträge vorhanden
+<div class='panel panel-default'>
+	<div class='panel-heading'>
+		<a class='toggleMoreInformation'><h4 class='panel-title'>Erschliessung</h4></a>
+	</div>	
+	<div class='ausklappen hidden panel-body'>
+		<p>
+		Ein Fremdschlüssel ist ein Attribut oder eine Attributkombination einer Relation, welches auf einen 
+		Primärschlüssel (bzw. Schlüsselkandidaten) einer anderen oder der gleichen Relation verweist.
+		</p>
+	</div>
+</div>
+
 " );
 
 // G
@@ -171,9 +300,19 @@ Noch keine Einträge vorhanden
 " );
 
 // K
-$tpl->assign( "disableK", "disabled='disabled'");
+$tpl->assign( "disableK", "");
 $tpl->assign( "K", "
-Noch keine Einträge vorhanden
+<div class='panel panel-default'>
+	<div class='panel-heading'>
+		<a class='toggleMoreInformation'><h4 class='panel-title'>Konzeptionelles Datenmodell</h4></a>
+	</div>	
+	<div class='ausklappen hidden panel-body'>
+		<p>Das Konzeptionelle Datenmodell bildet den zu betrachtenden Realitätsausschnitt implementierungsunabhängig 
+		ab, d.h. es wird nicht festgelegt mit welcher Programmiersprache die Datenbank umgesetzt werden muss bzw. 
+		welche Datenbankart aus der Implementierung resultiert. Ein konzeptionelles Datenmodell, das sich als Standard 
+		etabliert hat, ist das Entity-Relationship-Modell.</p>
+	</div>
+</div>
 " );
 
 // L
@@ -185,6 +324,18 @@ $tpl->assign( "L", "
 	</div>	
 	<div class='ausklappen hidden panel-body'>
 		<p>Das System liefert keine Dokumente als Ergebnis.</p>
+	</div>
+</div>
+
+<div class='panel panel-default'>
+	<div class='panel-heading'>
+		<a class='toggleMoreInformation'><h4 class='panel-title'>Logisches Datenmodell</h4></a>
+	</div>	
+	<div class='ausklappen hidden panel-body'>
+		<p>Das logische Datenmodelle sind auf einen bestimmten Datenbanktyp, wie z.B. objektorientiert, hin 
+		ausgerichtet. Das daraus resultierende Datenschema ist dementsprechend implementierungsabhängig. Ein Beispiel 
+		für ein logisches Datenmodell ist das relationale Datenmodelll, mit dessen Hilfe eine relationale Datenbank 
+		definiert wird.</p>
 	</div>
 </div>
 " );
@@ -236,6 +387,7 @@ $tpl->assign( "P", "
 	<p>Alle relevanten Dokumente zusammen sind a1, a2, a4, a7, a8, b2, b3, c5</p>
 	</div>
 </div>
+
 <div class='panel panel-default'>
 	<div class='panel-heading'>
 		<a class='toggleMoreInformation'><h4 class='panel-title'>Precision</h4></a>
@@ -244,6 +396,27 @@ $tpl->assign( "P", "
 		<p>Quotient aus allen gefundenen relevanten Dokumenten und allen gefundenen Dokumenten.</p>
 		<img src='../images/evaIR/precision.gif' class='img-responsive' />
 		<p>Precision beschreibt die Genauigkeit eines Ergebnisses.</p>
+	</div>
+</div>
+
+<div class='panel panel-default'>
+	<div class='panel-heading'>
+		<a class='toggleMoreInformation'><h4 class='panel-title'>Projektion</h4></a>
+	</div>	
+	<div class='ausklappen hidden panel-body'>
+		<p>Der ausgewählte Schlüsselkandidat, der in Folge für die Abbildung der Relationen verwendet wird. Die Werte 
+		dieses Schlüssels werden in referenzierenden Tabellen als <a href='#F'>Fremdschlüssel</a> verwendet.</p>
+	</div>
+</div>
+
+
+<div class='panel panel-default'>
+	<div class='panel-heading'>
+		<a class='toggleMoreInformation'><h4 class='panel-title'>Projektion</h4></a>
+	</div>	
+	<div class='ausklappen hidden panel-body'>
+		<p>Die Projektion ist eine Auswahl bestimmter Attribute einer Relation (Spalten einer Tabelle) und 
+		Unterdrückung der Information aus den nicht gewünschten Spalten.</p>
 	</div>
 </div>
 " );
@@ -266,6 +439,7 @@ $tpl->assign( "R", "
   Dokumente nach der Relevanz. Voraussetzung daf&uuml;r ist eine gewichtete Indexierung.</p>
 	</div>
 </div>
+
 <div class='panel panel-default'>
 	<div class='panel-heading'>
 		<a class='toggleMoreInformation'><h4 class='panel-title'>Recall</h4></a>
@@ -276,6 +450,7 @@ $tpl->assign( "R", "
 		<p>Recall beschreibt die Vollst&auml;ndigkeit eines Ergebnisses. </p>
 	</div>
 </div>
+
 <div class='panel panel-default'>
 	<div class='panel-heading'>
 		<a class='toggleMoreInformation'><h4 class='panel-title'>Recall-Precision-Graph</h4></a>
@@ -289,6 +464,41 @@ $tpl->assign( "R", "
 		</p>
 	</div>
 </div>
+
+<div class='panel panel-default'>
+	<div class='panel-heading'>
+		<a class='toggleMoreInformation'><h4 class='panel-title'>Relationale Datenbank</h4></a>
+	</div>	
+	<div class='ausklappen hidden panel-body'>
+		<p>Eine relationale Datenbank verwendet Relationen oder zweidimensionale Tabellen zum Speichern von 
+		Informationen.
+		</p>
+	</div>
+</div>
+
+<div class='panel panel-default'>
+	<div class='panel-heading'>
+		<a class='toggleMoreInformation'><h4 class='panel-title'>Relationales Datenmodell</h4></a>
+	</div>	
+	<div class='ausklappen hidden panel-body'>
+		<p>Ein einem Relationalen Datenmodell werden die Daten in Tabellenform gespeichert, wobei jede Spalte der 
+		Tabelle ein Datenelement bzw. ein Attribut repräsentiert. Jedem Dateielement wird ein einfacher Datentyp 
+		zugeordnet. In jeder Tabellenzeile wird ein Datensatz gespeichert, der durch einen Primärschlüssel eindeutig 
+		identifizierbar ist. Beziehungen zwischen mehreren Tabellen werden über Fremdschlüssel hergestellt.
+		</p>
+	</div>
+</div>
+
+<div class='panel panel-default'>
+	<div class='panel-heading'>
+		<a class='toggleMoreInformation'><h4 class='panel-title'>Relation</h4></a>
+	</div>	
+	<div class='ausklappen hidden panel-body'>
+		<p>Eine Relation (Beziehung) verbindet zwei oder mehrere <a href='#E'>Entitäten</a> wechselseitig miteinander.
+		</p>
+	</div>
+</div>
+
 <div class='panel panel-default'>
 	<div class='panel-heading'>
 		<a class='toggleMoreInformation'><h4 class='panel-title'>Relevanz</h4></a>
@@ -301,15 +511,51 @@ $tpl->assign( "R", "
 " );
 
 // S
-$tpl->assign( "disableS", "disabled='disabled'");
+$tpl->assign( "disableS", "d");
 $tpl->assign( "S", "
-Noch keine Einträge vorhanden
+<div class='panel panel-default'>
+	<div class='panel-heading'>
+		<a class='toggleMoreInformation'><h4 class='panel-title'>Schlüssel</h4></a>
+	</div>	
+	<div class='ausklappen hidden panel-body'>
+		<p>Ein Schlüssel dient in einer <a href='#R'>relationalen Datenbank</a> dazu, die <a href='#T'>Tupel</a> 
+		(Datensätze) einer <a href='#R'>Relation</a> (Tabelle) eindeutig zu identifizieren, sie zu nummern. Ein 
+		Schlüssel ist dann eine Gruppe von Spalten, die so ausgewählt wird, dass jede Tabellenzeile über den Werten 
+		dieser Spaltengruppe eine einmalige Wertekombination hat.</p>
+	</div>
+</div>
+
+<div class='panel panel-default'>
+	<div class='panel-heading'>
+		<a class='toggleMoreInformation'><h4 class='panel-title'>Selektion</h4></a>
+	</div>	
+	<div class='ausklappen hidden panel-body'>
+		<p>Teilmengenbildung, d.h. Auswahl bestimmter Tupel in einer Relation (Zeilen einer Tabelle), die eine 
+		vorgegebene Bedingung erfüllen.
+	</div>
+</div>
 " );
 
 // T
-$tpl->assign( "disableT", "disabled='disabled'");
+$tpl->assign( "disableT", "");
 $tpl->assign( "T", "
-Noch keine Einträge vorhanden
+<div class='panel panel-default'>
+	<div class='panel-heading'>
+		<a class='toggleMoreInformation'><h4 class='panel-title'>Tabelle</h4></a>
+	</div>	
+	<div class='ausklappen hidden panel-body'>
+		<p>Tabellarische Darstellung eines Relationenschemas (Tabellenkopf) mit Relationen (Tabelleninhalt).
+	</div>
+</div>
+
+<div class='panel panel-default'>
+	<div class='panel-heading'>
+		<a class='toggleMoreInformation'><h4 class='panel-title'>Tupel</h4></a>
+	</div>	
+	<div class='ausklappen hidden panel-body'>
+		<p>Ein Tupel ist eine Zeile in einer Tabelle (Relation).</p>
+	</div>
+</div>
 " );
 
 // U

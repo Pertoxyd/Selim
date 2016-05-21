@@ -5,61 +5,66 @@ body
 	background-position: -500px -250px;
 }
 
-media="all"
-@media (min-width: 960px)
-.container {
-  max-width: 980px;
-}
-.jumbotron
-{
-	margin-top: 120px;
-	background-color: transparent;
-}
-.navButton 
-{
-	margin-left: 15px;
-}
-.headerSelim, .headerSelim .navbar-brand
-{
-	border-bottom: 3px solid #0186BC;
-	background-color: #ffffff;
-}
-.headerSelim .navbar-brand {
-	border-bottom: none;
+.jumbotron li {
+	font-size: 18px;
 }
 
-.iwisTipp /*.navbar-collapse.collapse*/
-{
-	background: url('./iwi-klein.png') no-repeat 0px 0px transparent;
-	height: 120px !important;
-	display: block;
-	width: 98px;
-}
-.padding {
-	padding: 15px;
+@media (min-width: 960px) {
+	.container {
+	  max-width: 980px;
+	}
+	.jumbotron
+	{
+		margin-top: 120px;
+		background-color: transparent;
+	}
+	.navButton
+	{
+		margin-left: 15px;
+	}
+	.headerSelim, .headerSelim .navbar-brand
+	{
+		border-bottom: 3px solid #0186BC;
+		background-color: #ffffff;
+	}
+	.headerSelim .navbar-brand {
+		border-bottom: none;
+	}
+
+	.iwisTipp /*.navbar-collapse.collapse*/
+	{
+		background: url('./iwi-klein.png') no-repeat 0 0 transparent;
+		height: 120px !important;
+		display: block;
+		width: 98px;
+	}
+	.padding {
+		padding: 15px;
+	}
+
+	blockquote {
+		border-left-color: #0186BC;
+	}
+
+	#iwistipp h2 {
+		white-space: nowrap;
+		min-width: 250px;
+	}
+
+	/* Hervorhebung durch blau */
+	.highlight {
+		color: #0186BC;
+	}
+
+	video {
+		border: 1px solid #333;
+	}
 }
 
-blockquote {
-	border-left-color: #0186BC;
-}
-
-#iwistipp h2 {
-	white-space: nowrap;
-	min-width: 250px;
-}
-
-/* Hervorhebung durch blau */
-.highlight {
-	color: #0186BC;
-}
-
-video {
-	border: 1px solid #333;
-}
-media="all"
-@media (min-width: 1200px)
-video {
-  min-width: 500px;
+@media (min-width: 1200px) {
+	video {
+	  min-width: 500px;
+	}
 }
 /* Small devices (tablets, 768px and up) */
 @media (max-width: 768px) {
@@ -86,17 +91,17 @@ video {
 }
 .vennDiagramm1 {
 	background-color: yellow;
-	border-radius: 50% 0px 0px 50%;
+	border-radius: 50% 0 0 50%;
 }
 .vennDiagramm2 {
 	background-color: #008000;
 }
 .vennDiagramm3 {
 	background-color: blue;
-	border-radius: 0px 50% 50% 0px;
+	border-radius: 0 50% 50% 0;
 }
 .glossar .panel {
-	margin-bottom: 0px;
+	margin-bottom: 0;
 }
 
 .buttonsLGAnsicht a {
