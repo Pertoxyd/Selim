@@ -17,14 +17,26 @@ $tpl->assign( "module_mobile_title", "SELiM - FIS" );
 $tpl->assign( "module_headline", "Einordnung des Themas" );
 
 // Text
-$tpl->assign( "text", "Ein wichtiger Teil des weltweit zur Verfügung stehenden Informationsangebots kann durch den 
-Zugriff auf Datenbanken, der Schlüsseltechnologie von Fakteninformationssystemen, erschlossen werden.<br/><br/>Daher ist 
-es wichtig, Einblick in die Funktionsweise und den Aufbau von Datenbanken zu erlangen, um gezielt Informationen gewinnen 
- zu können. Für den erfolgreichen Einsatz eines Informationssystems in der Praxis ist es von großer Bedeutung, dass es 
- zunächst gelingt, das gegebene Informationsproblem in einem Datenmodell abzubilden, welches anschließend in eine 
- Datenbank überführt wird.<br/><br/>In diesem Lernsystem werden Grundkenntnisse im Bereich der Datenmodellierung und im 
- Umgang mit Datenbanken mit SQL vermittelt, die eine Voraussetzung für einen sicheren Umgang mit 
- Fakteninformationssystemen sind." );
+$tpl->assign( "text", "
+<p>Das Entity-Relationship-Modell (kurz: ER-Modell oder ERM) ist ein konzeptionelles Datenmodell zur Erstellung eines 
+Datenbauplans für ein Informationssystem.</p>
+<p>Die ER-Modellierung lässt sich durch folgende drei Schritte charakterisieren:</p>
+<ol>
+    <li>
+        Auswahl von Objekten aus der realen Welt,<br/>
+        Beziehungen, die zwischen diesen bestehen, <br/>
+        und Attribute, die Objekte und Beziehungen näher kennzeichnen,
+    </li>
+    <li>
+        Benennung der ausgewählten Objekte und Beziehungen,
+    </li>
+    <li>
+        Klassifikation der Objekte und Beziehungen.
+    </li>
+</ol>
+<p>Das Ergebnis der ER-Modellierung stellt einen Ausschnitt der Realität dar, der für eine Problemstellung wichtig 
+ist.</p>
+" );
 
 // Iwis Tipp
 // 1. sichtbar oder unsichtbar?
