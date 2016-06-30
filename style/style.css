@@ -70,6 +70,7 @@ body
 @media (max-width: 768px) {
 	.jumbotron {
 		margin-top: 63px;
+		background-color: transparent;
 	}
 }
 /* Radiobuttons haben linksbündigen Text */
@@ -106,4 +107,22 @@ body
 
 .buttonsLGAnsicht a {
 	margin-right: 5px;
+}
+
+/* Drag & Drop Tabelle */
+.fixed-td-width td {
+	width: 33%;
+	height: 70px;
+}
+
+
+@media(max-width: 768px) {
+	.fixed-td-width td {
+		width: 33%;
+		height: 100px;
+	}
+}
+
+.draggable {
+	cursor: move;
 }

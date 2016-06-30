@@ -14,7 +14,7 @@ $tpl->assign( "website_title", "Fakteninformationssysteme" );
 $tpl->assign( "module_title", "SELiM - Fakteninformationssysteme" );
 $tpl->assign( "module_mobile_title", "SELiM - FIS" );
 // Überschrift der aktuellen Seite
-$tpl->assign( "module_headline", "Einordnung des Themas" );
+$tpl->assign( "module_headline", "Entity-Relationship-Modell" );
 
 // Text
 $tpl->assign( "text", "

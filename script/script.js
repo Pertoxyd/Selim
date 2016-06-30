@@ -199,3 +199,70 @@ function toggleAnswer2() {
 jQuery('.toggleMoreInformation').click(function() {
     jQuery(this).parent().siblings(".ausklappen").toggleClass("hidden");
 });
+
+//Drag & Drop Tabelle
+jQuery("#drag1").draggable({
+	revert: "invalid",
+	snap: ".droppable",
+	snapMode: "inner"
+});
+jQuery("#drag2").draggable({
+	revert: "invalid",
+	snap: ".droppable",
+	snapMode: "inner"
+});
+jQuery("#drag3").draggable({
+	revert: "invalid",
+	snap: ".droppable",
+	snapMode: "inner"
+});
+jQuery("#drag4").draggable({
+	revert: "invalid",
+	snap: ".droppable",
+	snapMode: "inner"
+});
+jQuery("#drag5").draggable({
+	revert: "invalid",
+	snap: ".droppable",
+	snapMode: "inner"
+});
+jQuery("#drag6").draggable({
+	revert: "invalid",
+	snap: ".droppable",
+	snapMode: "inner"
+});
+jQuery("#drag7").draggable({
+	revert: "invalid",
+	snap: ".droppable",
+	snapMode: "inner"
+});
+jQuery("#drag8").draggable({
+	revert: "invalid",
+	snap: ".droppable",
+	snapMode: "inner"
+});
+
+jQuery("#drop1").droppable({
+	accept: "#drag7"
+});
+jQuery("#drop2").droppable({
+	accept: "#drag6"
+});
+jQuery("#drop3").droppable({
+	accept: "#drag8"
+});
+jQuery("#drop4").droppable({
+	accept: "#drag2"
+});
+jQuery("#drop5").droppable({
+	accept: "#drag1"
+});
+jQuery("#drop6").droppable({
+	accept: "#drag3"
+});
+jQuery("#drop7").droppable({
+	accept: "#drag4"
+});
+jQuery("#drop8").droppable({
+	accept: "#drag5"
+});

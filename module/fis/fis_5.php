@@ -4,7 +4,7 @@ include("../../Template.class.php");
 
 // Das Template laden
 $tpl = new Template();
-$tpl->load("content/tpl_image_text.tpl");
+$tpl->load("content/tpl_text.tpl");
 
 // Die Sprachdatei laden
 $langs[] = "de/lang_main.php";
@@ -20,11 +20,6 @@ $tpl->assign( "module_title", "SELiM - Fakteninformationssysteme" );
 $tpl->assign( "module_mobile_title", "SELiM - FIS" );
 // Überschrift der aktuellen Seite
 $tpl->assign( "module_headline", "Begriffszusammenhänge" );
-
-// Bildpfad
-$tpl->assign( "image_path", "../../images/fis/datenmodell.jpg" );
-//Bild Alt Attribut
-$tpl->assign( "image_alt", "Datenmodell" );
 // Text
 $tpl->assign( "text", "
 Das Ziel der Datenmodellierung ist eine systematische, strukturierte Erfassung und Dokumentation von Informationen, 
@@ -41,8 +36,8 @@ werden muss bzw. welche Datenbankart aus der Implementierung resultiert.<br/><br
 Logische Datenmodelle sind auf einen bestimmten Datenbanktyp, wie z.B. objektorientiert, hin ausgerichtet. Die daraus 
 resultierenden Datenschemata sind dementsprechend implementierungsabhängig. Ein Beispiel für ein logisches Datenmodell 
 ist das Relationenmodell, mit dessen Hilfe eine relationale Datenbank definiert wird.<br/><br/>
-Die Abhängigkeit der Schemata kann man folgendermaßen darstellen:
-" );
+Die Abhängigkeit der Schemata kann man folgendermaßen darstellen:<br/><br/>
+<img class='img-responsive center-block' src='../../images/fis/datenmodell.jpg' alt='Datenmodell'>" );
 
 // Iwis Tipp
 // 1. sichtbar oder unsichtbar?
