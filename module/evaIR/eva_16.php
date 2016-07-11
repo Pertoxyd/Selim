@@ -36,6 +36,9 @@ $tpl->assign( "loesung2", "Die Maße sagen nichts darüber aus, wie gut ein Syst
 // Welche Javascript Methode soll die Inputs validieren?
 $tpl->assign("ValidateFunction", "toggleAnswer()");
 
+
+$tpl->assign("hideBlock1", "hidden");
+
 // Iwis Tipp
 $tpl->assign( "iwisHeadline", "iWis Tipp" );
 $tpl->assign( "iwisTipp", "

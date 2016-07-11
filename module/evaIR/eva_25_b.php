@@ -33,6 +33,7 @@ $tpl->assign( "loesung2", "");
 
 // Block zwei verstecken
 $tpl->assign( "hideBlock", "hidden");
+$tpl->assign("hideBlock1", "hidden");
 
 // Iwis Tipp
 $tpl->assign( "iwisHeadline", "iWis Tipp" );

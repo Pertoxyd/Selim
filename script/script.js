@@ -152,9 +152,12 @@ function checkSelects() {
 	jQuery('body').find('select.selects.hidden').remove();
 	jQuery('#alertBox').removeClass('padding bg-danger bg-success');
 	jQuery('.selects').removeClass('correct');
+	jQuery('.selects').removeClass('wrong');
 	jQuery('.selects').each(function(i,v) {
 		if(jQuery(v).val() == '1') {
 			jQuery(v).addClass('correct');
+		} else {
+			jQuery(v).addClass('wrong');
 		}
 	});
 	if(jQuery('.selects').length == jQuery('.selects.correct').length) {
@@ -191,14 +194,45 @@ function checkBoxVal() {
 }
 // Klappt einen Lösungsvorschlag aus
 function toggleAnswer1() {
-	jQuery('.aufgabe1').toggle();
+	if(!jQuery('#btnloesung1').hasClass('disabled')) {
+		jQuery('.aufgabe1').toggle();
+	}
 }
 function toggleAnswer2() {
-	jQuery('.aufgabe2').toggle();
+	if(!jQuery('#btnloesung2').hasClass('disabled')) {
+		jQuery('.aufgabe2').toggle();
+	}
+}
+function toggleAnswer3() {
+	if(!jQuery('#btnloesung3').hasClass('disabled')) {
+		jQuery('.aufgabe3').toggle();
+	}
 }
 jQuery('.toggleMoreInformation').click(function() {
     jQuery(this).parent().siblings(".ausklappen").toggleClass("hidden");
 });
+jQuery('#loesung1').keyup(function () {
+	if(jQuery(this).val().length >= 15) {
+		jQuery('#btnloesung1').removeClass('disabled');
+	} else if(jQuery(this).val().length < 15) {
+		jQuery('#btnloesung1').addClass('disabled');
+	}
+});
+jQuery('#loesung2').keyup(function () {
+	if(jQuery(this).val().length >= 15) {
+		jQuery('#btnloesung2').removeClass('disabled');
+	} else if(jQuery(this).val().length < 15) {
+		jQuery('#btnloesung2').addClass('disabled');
+	}
+});
+jQuery('#loesung3').keyup(function () {
+	if(jQuery(this).val().length >= 15) {
+		jQuery('#btnloesung3').removeClass('disabled');
+	} else if(jQuery(this).val().length < 15) {
+		jQuery('#btnloesung3').addClass('disabled');
+	}
+});
+
 
 //Drag & Drop Tabelle
 jQuery("#drag1").draggable({
@@ -266,3 +300,64 @@ jQuery("#drop7").droppable({
 jQuery("#drop8").droppable({
 	accept: "#drag5"
 });
+
+//Alles für Aufgabe 1
+jQuery('#cursor-change>strong').click(function () {
+	jQuery('#cursor-change>strong').removeClass('wrong');
+	jQuery('#cursor-change>strong').removeClass('correct');
+	if(jQuery(this).hasClass('vormerken')) {
+		jQuery('strong.vormerken').toggleClass('marked');
+	} else if(jQuery(this).hasClass('video')) {
+		jQuery('strong.video').toggleClass('marked');
+	} else if(jQuery(this).hasClass('ausleiher')) {
+		jQuery('strong.ausleiher').toggleClass('marked');
+	} else {
+		jQuery(this).toggleClass('marked');
+	}
+
+});
+
+function markWords() {
+	if(jQuery('#bib').hasClass('marked')) {
+		jQuery('#bib').removeClass('marked');
+		jQuery('#bib').addClass('wrong');
+	}
+	if(jQuery('#is').hasClass('marked')) {
+		jQuery('#is').removeClass('marked');
+		jQuery('#is').addClass('wrong');
+	}
+	if(jQuery('#info').hasClass('marked')) {
+		jQuery('#info').removeClass('marked');
+		jQuery('#info').addClass('wrong');
+	}
+	if(jQuery('#verleihen').hasClass('marked')) {
+		jQuery('#verleihen').removeClass('marked');
+		jQuery('#verleihen').addClass('correct');
+	}
+	if(jQuery('strong.vormerken').hasClass('marked')) {
+		jQuery('strong.vormerken').removeClass('marked');
+		jQuery('strong.vormerken').addClass('correct');
+	}
+	if(jQuery('strong.video').hasClass('marked')) {
+		jQuery('strong.video').removeClass('marked');
+		jQuery('strong.video').addClass('correct');
+	}
+	if(jQuery('strong.ausleiher').hasClass('marked')) {
+		jQuery('strong.ausleiher').removeClass('marked');
+		jQuery('strong.ausleiher').addClass('correct');
+	}
+	if(jQuery('#strafen').hasClass('marked')) {
+		jQuery('#strafen').removeClass('marked');
+		jQuery('#strafen').addClass('correct');
+	}
+	if(jQuery('#rueckgaben').hasClass('marked')) {
+		jQuery('#rueckgaben').removeClass('marked');
+		jQuery('#rueckgaben').addClass('wrong');
+	}
+	if(jQuery('#zahlen').hasClass('marked')) {
+		jQuery('#zahlen').removeClass('marked');
+		jQuery('#zahlen').addClass('correct');
+	}
+
+	jQuery('#cursor-change>strong').removeClass('marked');
+}

@@ -67,9 +67,16 @@ body
 	}
 }
 /* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 960px) {
+	.jumbotron {
+		margin-top: 80px;
+		background-color: transparent;
+	}
+}
+/* Small devices (tablets, 768px and up) */
 @media (max-width: 768px) {
 	.jumbotron {
-		margin-top: 63px;
+		margin-top: 30px;
 		background-color: transparent;
 	}
 }
@@ -86,6 +93,15 @@ body
 	background-color: #008000;
 	
 }
+
+/* Klasse zur Hervorhebung falscher Antworten */
+
+.wrong {
+	color: #fff;
+	border: 1px solid red;
+	background-color: red;
+}
+
 /* Venn Diagramm */
 .VenContainer {
 	background-color: #cccccc;
@@ -115,7 +131,6 @@ body
 	height: 70px;
 }
 
-
 @media(max-width: 768px) {
 	.fixed-td-width td {
 		width: 33%;
@@ -125,4 +140,29 @@ body
 
 .draggable {
 	cursor: move;
+}
+
+code {
+	color: #0186BC;
+}
+
+hr {
+	border-top: 1px solid #000;
+}
+
+.aufgabe1, .aufgabe2 {
+	margin-top: 50px;
+}
+
+#lueckentext>.selects {
+	display: inline;
+	width: auto;
+}
+
+.marked {
+	background-color: #0186BC;
+}
+
+#cursor-change > strong {
+	cursor: pointer;
 }

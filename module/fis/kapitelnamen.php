@@ -43,12 +43,12 @@
         "Anwendung Boolscher Logik (2/2)",
         "Aufgabe 13",
         "Funktionen in SQL",
-        "Aufgabe 13",
-        "Anfragen über mehrere Relationen",
         "Aufgabe 14",
+        "Anfragen über mehrere Relationen",
         "Aufgabe 15",
         "Aufgabe 16",
         "Aufgabe 17",
+        "Aufgabe 18",
         "Ende"
     );
 ?>
