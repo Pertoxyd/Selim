@@ -4,7 +4,7 @@ include("../../Template.class.php");
 
 // Das Template laden
 $tpl = new Template();
-$tpl->load("content/tpl_text.tpl");
+$tpl->load("content/tpl_video.tpl");
 
 // Die Sprachdatei laden
 $langs[] = "de/lang_main.php";
@@ -22,7 +22,15 @@ $tpl->assign( "module_mobile_title", "SELiM - FIS" );
 $tpl->assign( "module_headline", "Datenmanipulation" );
 
 // Text
-$tpl->assign( "text", "");
+$tpl->assign( "text", "In diesem Lernsystem soll lediglich auf die Möglichkeiten der DML eingegangen werden, da ihr aus 
+Anwendersicht die größte Bedeutung beim Umgang mit Datenbanken zukommt. Mit Hilfe der DML können Datensätze eingefügt, 
+gelöscht, aktualisiert und abgefragt werden.");
+
+// Video Source
+$tpl->assign( "videoSource", "../../movie/fis/dml_movie.mp4" );
+
+// Text unter Video
+$tpl->assign( "text2", "" );
 
 // Iwis Tipp
 // 1. sichtbar oder unsichtbar?

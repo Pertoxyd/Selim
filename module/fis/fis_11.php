@@ -34,6 +34,8 @@ und die <strong class='video'>Videofilme</strong> können auch mehrmals <strong 
 werden.<br/><br/>Die <strong class='ausleiher'>Ausleiher</strong> müssen <strong id='strafen'>Strafen</strong> für verspätete 
 <strong id='rueckgaben'>Rückgaben</strong> <strong id='zahlen'>zahlen</strong>.");
 
+$tpl->assign( "controlMethod", "markWords()" );
+
 // Iwis Tipp
 // 1. sichtbar oder unsichtbar?
 // 2. Überschrift (zum Beispiel Tipp oder Lösungsvorschlag)

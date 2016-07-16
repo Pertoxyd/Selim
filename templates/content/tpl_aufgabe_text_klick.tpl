@@ -8,6 +8,6 @@
         <p id="cursor-change">{$taskText}</p>
     </div>
 </div>
-<button type="button" class="btn btn-default pull-right" onClick="markWords()">Überprüfen</button>
+<button type="button" class="btn btn-default pull-right" onClick="{$controlMethod}">Überprüfen</button>
 {* Footer einbinden *}
 {include file="footer.tpl"}

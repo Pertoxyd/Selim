@@ -11,10 +11,11 @@
 				</button>
 				<span class="navbar-brand hidden-md hidden-lg">{$module_mobile_title}</span>
 				<!-- iWis Tipp Button -->
-				<button type="button" class="navbar-toggle collapsed pull-right btn-lg" data-toggle="collapse" data-target="#iwistipp" aria-expanded="false" aria-controls="navbar">
+				<button type="button" class="navbar-toggle collapsed pull-right btn-lg {$visibility}" data-toggle="modal" data-target="#iwistippmobil">
 					<span class="sr-only">Toggle navigation</span>
 					<span class="glyphicon glyphicon-question-sign"></span>
 				</button>
+
 			</div>
 			<div class="row">
 				<div class="col-md-9 col-lg-9">
@@ -71,6 +72,23 @@
 		  
 		</div><!-- /.container-->
     </nav>
+<!-- Modal -->
+<div class="modal fade" id="iwistippmobil" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title" id="myModalLabel">{$iwisHeadline}</h4>
+			</div>
+			<div class="modal-body">
+				{$iwisTipp}
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>
 
 	<!-- Content Bereich beginnt -->
 	<div class="container">
